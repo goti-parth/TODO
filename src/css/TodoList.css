@@ -1,0 +1,29 @@
+.TodoList {
+    margin: 2rem;
+    padding: 1rem;
+    min-width: 15rem;
+    width: 30rem;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    color: #fff;
+  }
+  
+  .TodoList ul {
+    margin-top: 1rem;
+    list-style: none;
+  }
+  
+  .TodoList h1 {
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .TodoList h1 span {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    margin-left: 3px;
+    margin-top: 0.2rem;
+  }
+  

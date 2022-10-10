@@ -1,0 +1,115 @@
+.Todo {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 0.2rem;
+    background: #ffffff1a;
+    font-size: 0.8rem;
+  }
+  
+  .Todo-name{
+    display: flex;
+    align-items: center;
+  }
+
+  .Todo-name input {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.7rem;
+    cursor: pointer;
+  }
+
+  .Todo-task {
+    position: relative;
+    transition: opacity 0.4s linear;
+    word-break: break-all;
+  }
+  
+  .Todo-task.completed {
+    opacity: 0.6;
+  }
+  
+  .Todo-task.completed:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.5rem;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    animation: strikeitem 0.5s ease-out 0s forwards;
+  }
+  
+  @keyframes strikeitem {
+    to {
+      width: calc(100% + 1rem);
+    }
+  }
+  
+  .Todo-buttons {
+    flex-shrink: 0;
+    padding-left: 0.7em;
+  }
+  
+  .Todo-buttons button {
+    border: 1px solid #fff;
+    border-radius:  4px;
+    font-size: 0.7rem;
+    padding: 8px;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 0.7em;
+  }
+  
+  .Todo-buttons button:hover {
+    background: #d161ff;
+  }
+
+  .Todo-edit-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  .Todo-edit-form label {
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .Todo-edit-form input {
+    border: 1px solid #fff;
+    border-radius:  4px;
+    flex-grow: 1;
+    height: 1.5rem !important;
+    background: #f7f1f1;
+    padding: 0.5rem;
+    font-size: initial;
+  }
+  
+  .Todo-edit-form button {
+    border: 1px solid #fff;
+    border-radius:  4px;
+    font-size: 0.7rem;
+    padding: 8px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    margin-left: 0.7em;
+    height: 1.5rem !important;
+  }
+  
+  .Todo-edit-form button:hover {
+    background: #d161ff;
+  }
+  
+  .Todo-edit-form input,
+  .Todo-edit-form button {
+    font-family: "Quicksand", sans-serif;
+    height: 3rem;
+  }
+  

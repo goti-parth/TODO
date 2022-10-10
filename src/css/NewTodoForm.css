@@ -1,0 +1,49 @@
+.NewTodoForm {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .NewTodoForm label {
+    min-width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .NewTodoForm input {
+    flex-grow: 1;
+    border: 1px solid #fff;
+    border-radius:  4px;
+    background: #f7f1f1;
+    padding: 0 1.5em;
+    font-size: initial;
+    height: 1.7rem !important;
+  }
+  
+  .NewTodoForm button {
+    border: 1px solid #fff;
+    border-radius:  4px;
+    font-size: 0.7rem;
+    padding: 8px;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 0.7em;
+    height: 1.7rem !important;
+  }
+  
+  .NewTodoForm button:hover {
+    background: #d161ff;
+  }
+  
+  .NewTodoForm input,
+  .NewTodoForm button {
+    font-family: "Quicksand", sans-serif;
+    height: 3rem;
+  }
+
+  .error-msg {
+    color: #f7c306;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+  }
